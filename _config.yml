@@ -3,7 +3,7 @@ title: Salesforce DevOps Pipeline for Cheap
 subtitle: 
 email: amguerrero@gmail.com
 description: Salesforce DevOps Pipelines don't need to be cumbersome or expensive.
-baseurl: "/devops" # the subpath of your site, e.g. /blog
+baseurl: "/devops-test" # the subpath of your site, e.g. /blog
 url: https://guerrero.zone # the base hostname & protocol for your site
 author: Manuel Guerrero
 street_address:
