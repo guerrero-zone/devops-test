@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Generic
-description: Lorem ipsum dolor est
-image: assets/images/pic11.jpg
+title: Travis-CI
+description: Travis-CI DevOps Configuration for Salesforce Pipelines
+image: assets/images/travis-ci.svg
 nav-menu: true
 ---
 
