@@ -7,7 +7,7 @@ baseurl: "/devops" # the subpath of your site, e.g. /blog
 url: https://guerrero.zone # the base hostname & protocol for your site
 author: Manuel Guerrero
 street_address:
-city:
+city: London
 state:
 zip_code:
 country: United Kingdom
