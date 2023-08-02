@@ -57,13 +57,3 @@ The automation will find out where to validate or promote based on the destinati
 + **Creating a PR to main or master**: The pipeline will validate the changes against production.
 + **Tagging a commit with a production tag (in `main`/`master`)**: A production version tag is a semver style git tag, i.e. `v1.2.3`. When we tag a commit in `main` or `master` with these kind of tags, it will promote the changes to production.
 + **Tagging a commit with a backpromote tag**: Similarly with the production and non-production tags, we can create a backpromote tag for an environment and the pipeline will look for that environment in its configuration, and back-promote the changes there. Backpromote tag naming convention start with `backpromote-`, then the environment id, and then we can add a `-` followed by anything to make it unique, i.e. the current date. An example is `backpromote-dev1-20230524`, this would trigger the pipeline to look for a configurated environment called `dev1` and then back-promote the changes there.
-
-## Pipelines We Can Build
-With this Salesforce DevOps strategy we can build pipelines as **simple** as this one we can use in a company with a very small implementation team, maybe 1 or 2 admins or devs, that values quality processes that helps them avoid hectic deployments:
-![Simple Pipeline](assets/images/env-strategy-simple-pipeline.svg)
-
-Or pipelines for **simple projects** where you have several developers or admins working in different implementation environments like this one:
-![Simple Project Pipeline](assets/images/env-strategy-simple-project.svg)
-
-Or we can go even bigger and configure a more **complex pipeline** for the situations where we have several projects going at the same time being implemented in different sets of implementation environments and Client Services or Business As Usual recurrent work and even possible hotfixes:
-![Complex Pipeline](assets/images/env-strategy-complex-pipeline.svg)
